@@ -118,11 +118,11 @@ other hardware are welcome in the issues.
 
 ## Upstreaming
 
-DXVK ships per-game defaults in `src/util/config/config.cpp` and currently
-has no entry for `AI.exe`. The ideal outcome is this key shipping inside DXVK
-so nobody needs this repository. If you can reproduce the gain on different
-hardware, please open an issue here with your numbers; that is the evidence a
-DXVK pull request needs.
+A pull request adding this as a built-in DXVK default for `AI.exe` is open:
+[doitsujin/dxvk#5948](https://github.com/doitsujin/dxvk/pull/5948). Once it
+is merged and ships in Proton, nobody will need this repository. If you can
+reproduce the gain on different hardware, please open an issue here with your
+numbers; more data points help the upstream review.
 
 ## License
 

@@ -120,11 +120,11 @@ Relatos de outro hardware são bem-vindos nas issues.
 
 ## Enviar pro DXVK
 
-O DXVK traz padrões por jogo em `src/util/config/config.cpp` e hoje não tem
-entrada pro `AI.exe`. O ideal é essa chave ir dentro do DXVK pra ninguém
-precisar deste repositório. Se você reproduzir o ganho em hardware diferente,
-abra uma issue aqui com seus números; é essa evidência que um pull request no
-DXVK precisa.
+Já existe um pull request adicionando isso como padrão embutido do DXVK pro
+`AI.exe`: [doitsujin/dxvk#5948](https://github.com/doitsujin/dxvk/pull/5948).
+Quando for aceito e chegar no Proton, ninguém mais vai precisar deste
+repositório. Se você reproduzir o ganho em hardware diferente, abra uma issue
+aqui com seus números; mais dados ajudam a revisão upstream.
 
 ## Licença
 

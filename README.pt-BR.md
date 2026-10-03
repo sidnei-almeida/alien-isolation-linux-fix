@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Alien: Isolation — Linux FPS Fix (Proton / DXVK)" width="100%">
+  <img src="assets/banner.png" alt="Alien: Isolation Linux FPS Fix (Proton / DXVK)" width="100%">
 </p>
 
-<h1 align="center">Alien: Isolation — Correção de FPS no Linux</h1>
+<h1 align="center">Alien: Isolation, correção de FPS no Linux</h1>
 
 <p align="center">
   Uma linha de configuração do DXVK que leva as piores cenas do jogo de 45 fps pra mais de 120 no Linux.<br>
@@ -49,9 +49,9 @@ Depois reinicie o jogo. Só isso.
 
 | Cena (mesmo save, mesmo lugar)        | Antes     | Depois     |
 |---------------------------------------|-----------|------------|
-| Estação do tram, olhando pela porta   | 40–50 fps | 120–130 fps |
-| Uso de GPU nessa cena                 | 31–45 %   | ~100 %     |
-| Resto do jogo                         | 100–140 fps | igual    |
+| Estação do tram, olhando pela porta   | 40-50 fps | 120-130 fps |
+| Uso de GPU nessa cena                 | 31-45 %   | ~100 %     |
+| Resto do jogo                         | 100-140 fps | igual    |
 
 ## Eu tenho esse problema?
 
@@ -59,7 +59,7 @@ Muito provavelmente, se tudo isso for verdade:
 
 - Você roda o *Alien: Isolation* no Linux via Proton, Wine ou qualquer launcher que use DXVK.
 - Em algumas áreas (as estações do tram são o caso clássico) o frame rate despenca, muitas vezes pela metade ou mais.
-- Enquanto isso acontece, a GPU **não** está ocupada: 30–50 % de uso, clock no máximo, VRAM sobrando.
+- Enquanto isso acontece, a GPU **não** está ocupada: 30-50 % de uso, clock no máximo, VRAM sobrando.
 - Nenhum núcleo da CPU está em 100 % também. Tudo parece ocioso e o jogo continua lento.
 - Baixar as configurações gráficas quase não muda nada.
 - Sua GPU tem Resizable BAR / Smart Access Memory ligado (confira na BIOS, ou com `lspci -vv` procurando um BAR de vários GB na GPU).
@@ -235,7 +235,7 @@ Sim, veja [Launch option em vez de arquivo](#launch-option-em-vez-de-arquivo). O
 
 O lugar certo pra essa correção é dentro do próprio DXVK, como padrão por jogo, pra sair com cada versão do Proton e ninguém precisar deste repositório.
 
-- **Pull request:** [doitsujin/dxvk#5948](https://github.com/doitsujin/dxvk/pull/5948) — adiciona `d3d11.cachedDynamicResources = a` pro `AI.exe` em `src/util/config/config.cpp`.
+- **Pull request:** [doitsujin/dxvk#5948](https://github.com/doitsujin/dxvk/pull/5948): adiciona `d3d11.cachedDynamicResources = a` pro `AI.exe` em `src/util/config/config.cpp`.
 
 Quando for aceito e chegar ao Proton, este repo vira uma conveniência pra quem usa Proton antigo. O badge no topo da página acompanha o estado do PR.
 
